@@ -91,23 +91,23 @@
     <!-- Dark Line -->
     <hr style="border-color: #333;">
 
-    <!-- Login Form -->
-    <div class="container" style="margin-left: 10px;" style="margin-do: 10px;">
-      <h2>Login</h2>
-      <form action="login.php" method="post">
+ <!-- Login Form -->
+<div id="login" class="container" style="margin-left: 10px;">
+    <h2>Login</h2>
+    <form action="login.php" method="post">
         <div class="form-group">
-          <label for="username">Username:</label>
-          <input type="text" class="form-control" id="username" name="username">
+            <label for="username">Username:</label>
+            <input type="text" class="form-control" id="username" name="username">
         </div>
         <div class="form-group">
-          <label for="password">Password:</label>
-          <input type="password" class="form-control" id="password" name="password">
+            <label for="password">Password:</label>
+            <input type="password" class="form-control" id="password" name="password">
         </div>
         <button type="submit" class="btn btn-primary">Login</button>
-      </form>
-      <p> Don't have an account? <a href="registration.php">Create an account.</a></p>
-    </div>
-    <!-- End Login Form -->
+    </form>
+    <p> Don't have an account? <a href="registration.php">Create an account.</a></p>
+</div>
+<!-- End Login Form -->
 
     <!-- End Contact Section -->
   </div> 
