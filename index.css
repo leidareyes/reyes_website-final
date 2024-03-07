@@ -6,7 +6,6 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Helvetica", sans-serif;}
   background-size: cover;
   background-image: url('lei.jpg'); /* Replace 'lei.jpg' with your actual image file name */
   min-height: 100%;
-  overflow: hidden; /* Hide overflow to remove scrollbar */
   background-color: #dcfaff; /* Change background color to dirty white */
   box-shadow: 10px 0 15px rgba(0, 0, 0, 0.3); /* Add shadow to the right side */
   transition: transform 0.3s ease; /* Adding a smooth transition effect */
@@ -29,7 +28,7 @@ body, p {
 }
 /* Add hover effect to text */
 .w3-jumbo:hover {
-  color: black; /* Change the color to your desired hover color */
+  color: rgb(236, 117, 117); /* Change the color to your desired hover color */
   transition: color 0.3s; /* Smooth transition effect */
 }
 /* Add underline effect when focused */
