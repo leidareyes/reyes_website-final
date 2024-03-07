@@ -1,0 +1,39 @@
+body, h1,h2,h3,h4,h5,h6 {font-family: "Helvetica", sans-serif;}
+.w3-row-padding img {margin-bottom: 12px;}
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('lei.jpg'); /* Replace 'lei.jpg' with your actual image file name */
+  min-height: 100%;
+  overflow: hidden; /* Hide overflow to remove scrollbar */
+  background-color: #dcfaff; /* Change background color to dirty white */
+  box-shadow: 10px 0 15px rgba(0, 0, 0, 0.3); /* Add shadow to the right side */
+  transition: transform 0.3s ease; /* Adding a smooth transition effect */
+}
+/* Adding hover effect */
+.bgimg:hover {
+  transform: scale(1.1); /* You can adjust the scale value as per your preference */
+}
+/* Make lines darker */
+hr {
+  border-color: #333;
+}
+/* Make text darker */
+body, p {
+  color: #333;
+}
+/* Make button text darker */
+.w3-button {
+  color: #333 !important;
+}
+/* Add hover effect to text */
+.w3-jumbo:hover {
+  color: black; /* Change the color to your desired hover color */
+  transition: color 0.3s; /* Smooth transition effect */
+}
+/* Add underline effect when focused */
+.w3-jumbo:focus {
+  text-decoration: underline;
+  outline: none; /* Remove the default focus outline */
+}
