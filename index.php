@@ -8,39 +8,8 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="index.css"> <!-- New CSS file -->
 
-  <style>
-    body, h1,h2,h3,h4,h5,h6 {font-family: "Helvetica", sans-serif;}
-    .w3-row-padding img {margin-bottom: 12px;}
-    .bgimg {
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-image: url('lei.jpg'); /* Replace 'lei.jpg' with your actual image file name */
-      min-height: 100%;
-      transition: transform 0.3s ease; /* Adding a smooth transition effect */
-      overflow: hidden; /* Hide overflow to remove scrollbar */
-      background-color: #dcfaff; /* Change background color to dirty white */
-      box-shadow: 10px 0 15px rgba(0, 0, 0, 0.3); /* Add shadow to the right side */
-    }
-/* Adding hover effect */
-.bgimg:hover {
-  transform: scale(1.1); /* You can adjust the scale value as per your preference */
-  overflow: hidden; /* Hide overflow to remove scrollbar */
-}
-/* Make lines darker */
-hr {
-  border-color: #333;
-}
-/* Make text darker */
-body, p {
-  color: #333;
-}
-/* Make button text darker */
-.w3-button {
-  color: #333 !important;
-}
-  </style>
 </head>
 
 <body>
@@ -75,6 +44,7 @@ body, p {
     <p>Information Technology Student</p>
   </header>
 
+
   <!-- About Section -->
   <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
     <h2>About Me</h2>
@@ -83,72 +53,73 @@ body, p {
         Additionally, I have a profound passion for photography, where I explore the world through the lens of my camera. With each click, I seek to capture the essence of fleeting moments, freezing them in time to be revisited and cherished. Through photography, I express my creativity and share my unique perspective with the world.
         In addition to navigating the intricate landscapes of technology and capturing the nuances of sound and melody, I proudly embrace the role of a furmom to a charming Shih Tzu named Choobie. Her delightful presence adds an extra layer of joy to my daily adventures.
         Join me on this multifaceted journey, where we blend the harmonies of technology, the expressive power of music, the captivating artistry of photography, and the boundless love of a furball. Together, let's weave a tapestry of memorable experiences that transcends the ordinary. Here's to the extraordinary moments we're destined to create!"</p>
-    <h3 class="w3-padding-16">My Skills</h3>
-    <p class="w3-wide">Playing Musical Instruments</p>
-    <div class="w3-light-grey">
-      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:95%">95%</div>
-    </div>
-    <p class="w3-wide">UI/UX Design</p>
-    <div class="w3-light-grey">
-      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:70%">70%</div>
-    </div>
-    <p class="w3-wide">Photography</p>
-    <div class="w3-light-grey">
-      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:80%">80%</div>
-    </div><br>
+    
+        <h3 class="w3-padding-16">My Skills</h3>
+<p class="w3-wide">Playing Musical Instruments</p>
+<div class="w3-light-grey">
+  <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:95%">95%</div>
+</div>
+<p class="w3-wide">UI/UX Design</p>
+<div class="w3-light-grey">
+  <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:70%">70%</div>
+</div>
+<p class="w3-wide">Photography</p>
+<div class="w3-light-grey">
+  <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:80%">80%</div>
+</div><br>
 
-    <a href="file:///D:/Reyes%20Resum%C3%A9.pdf" download>
+    <a href="path_to_your_file/Reyes%20Resum%C3%A9.pdf" download="Reyes Resume.pdf">
   <button class="w3-button w3-light-grey w3-padding-large w3-section">
     <i class="fa fa-download"></i> Download Resumé
   </button>
-</a>
+  </a>
 
-  <!-- End About Section -->
+    <!-- End About Section -->
   </div>  
-  
+
   <!-- Contact Section -->
-<div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
-  <h2>Contact Me</h2>
-  <hr class="w3-opacity">
+  <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+    <h2>Contact Me</h2>
+    <hr class="w3-opacity">
 
-  <div class="w3-section">
-    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Rodriguez Rizal, Philippines</p>
-    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +63 9193568563</p>
-    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: leidareyes28@gmail.com</p>
-  </div>
-
-  <!-- Dark Line -->
-  <hr style="border-color: #333;">
-
-<!-- Login Form -->
-<div class="container" style="margin-left: 10px;" style="margin-do: 10px;">
-  <h2>Login</h2>
-  <form action="login.php" method="post">
-    <div class="form-group">
-      <label for="username">Username:</label>
-      <input type="text" class="form-control" id="username" name="username">
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Rodriguez Rizal, Philippines</p>
+      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +63 9193568563</p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: leidareyes28@gmail.com</p>
     </div>
-    <div class="form-group">
-      <label for="password">Password:</label>
-      <input type="password" class="form-control" id="password" name="password">
-    </div>
-    <button type="submit" class="btn btn-primary">Login</button>
-  </form>
-  <p> Don't have an account? <a href="registration.php">Create an account.</a></p>
-</div>
-<!-- End Login Form -->
 
-<!-- End Contact Section -->
-</div> 
-  
+    <!-- Dark Line -->
+    <hr style="border-color: #333;">
+
+    <!-- Login Form -->
+    <div class="container" style="margin-left: 10px;" style="margin-do: 10px;">
+      <h2>Login</h2>
+      <form action="login.php" method="post">
+        <div class="form-group">
+          <label for="username">Username:</label>
+          <input type="text" class="form-control" id="username" name="username">
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" class="form-control" id="password" name="password">
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+      </form>
+      <p> Don't have an account? <a href="registration.php">Create an account.</a></p>
+    </div>
+    <!-- End Login Form -->
+
+    <!-- End Contact Section -->
+  </div> 
+
   <!-- Footer -->
   <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-medium" style="margin -10px">
-  <p style="color: #444;">2024 Leida Reyes &copy; All Rights Reserved</p>
-  <a href="https://www.instagram.com/zljdnn/" target="_blank" class="fa fa-instagram w3-hover-opacity" style="font-size: 24px; color: #333; margin-right: 10px; text-decoration: none;"></a>
-  <a href="https://www.facebook.com/leidareyes.28" target="_blank" class="fa fa-facebook-official w3-hover-opacity" style="font-size: 24px; color: #333; margin-right: 10px; text-decoration: none;"></a>
-  <a href="https://github.com/leidareyes" target="_blank" class="fa fa-github w3-hover-opacity" style="font-size: 24px; color: #333; margin-right: 10px; text-decoration: none;"></a>
+    <p style="color: #444;">2024 Leida Reyes &copy; All Rights Reserved</p>
+    <a href="https://www.instagram.com/zljdnn/" target="_blank" class="fa fa-instagram w3-hover-opacity" style="font-size: 24px; color: #333; margin-right: 10px; text-decoration: none;"></a>
+    <a href="https://www.facebook.com/leidareyes.28" target="_blank" class="fa fa-facebook-official w3-hover-opacity" style="font-size: 24px; color: #333; margin-right: 10px; text-decoration: none;"></a>
+    <a href="https://github.com/leidareyes" target="_blank" class="fa fa-github w3-hover-opacity" style="font-size: 24px; color: #333; margin-right: 10px; text-decoration: none;"></a>
   </footer> 
-<!-- END PAGE CONTENT --> 
+  <!-- END PAGE CONTENT --> 
 
 </div>
 <script>
