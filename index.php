@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="login.css">
-  
+
   <style>
     body, h1,h2,h3,h4,h5,h6 {font-family: "Helvetica", sans-serif;}
     .w3-row-padding img {margin-bottom: 12px;}
@@ -97,9 +97,11 @@ body, p {
       <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:80%">80%</div>
     </div><br>
 
-    <button class="w3-button w3-light-grey w3-padding-large w3-section">
-      <i class="fa fa-download"></i> Download Resume
-    </button>
+    <a href="file:///D:/Reyes%20Resum%C3%A9.pdf" download>
+  <button class="w3-button w3-light-grey w3-padding-large w3-section">
+    <i class="fa fa-download"></i> Download Resumé
+  </button>
+</a>
 
   <!-- End About Section -->
   </div>  
@@ -118,41 +120,37 @@ body, p {
   <!-- Dark Line -->
   <hr style="border-color: #333;">
 
-  <!-- Login Form -->
-  <div class="container">
-    <div class="box">
-      <h2>Login</h2>
-      <form action="login.php" method="post">
-        <div class="form-group">
-          <label for="username">Username:</label>
-          <input type="text" class="form-control" id="username" name="username">
-        </div>
-        <div class="form-group">
-          <label for="password">Password:</label>
-          <input type="password" class="form-control" id="password" name="password">
-        </div>
-        <button type="submit" class="btn btn-primary">Login</button>
-      </form>
-      <p> Don't have an account? <a href="registration.php">Create an account.</a></p>
+<!-- Login Form -->
+<div class="container" style="margin-left: 10px;" style="margin-do: 10px;">
+  <h2>Login</h2>
+  <form action="login.php" method="post">
+    <div class="form-group">
+      <label for="username">Username:</label>
+      <input type="text" class="form-control" id="username" name="username">
     </div>
-  </div>
-  <!-- End Login Form -->
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" class="form-control" id="password" name="password">
+    </div>
+    <button type="submit" class="btn btn-primary">Login</button>
+  </form>
+  <p> Don't have an account? <a href="registration.php">Create an account.</a></p>
+</div>
+<!-- End Login Form -->
 
 <!-- End Contact Section -->
 </div> 
   
   <!-- Footer -->
-  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
-  <p style="color: #333;">2024 Leida Reyes &copy; All Rights Reserved</p>
+  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-medium" style="margin -10px">
+  <p style="color: #444;">2024 Leida Reyes &copy; All Rights Reserved</p>
   <a href="https://www.instagram.com/zljdnn/" target="_blank" class="fa fa-instagram w3-hover-opacity" style="font-size: 24px; color: #333; margin-right: 10px; text-decoration: none;"></a>
   <a href="https://www.facebook.com/leidareyes.28" target="_blank" class="fa fa-facebook-official w3-hover-opacity" style="font-size: 24px; color: #333; margin-right: 10px; text-decoration: none;"></a>
   <a href="https://github.com/leidareyes" target="_blank" class="fa fa-github w3-hover-opacity" style="font-size: 24px; color: #333; margin-right: 10px; text-decoration: none;"></a>
   </footer> 
-<!-- END PAGE CONTENT -->
+<!-- END PAGE CONTENT --> 
+
 </div>
-
-
-
 <script>
 // Open and close sidebar
 function openNav() {
