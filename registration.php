@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="city.js"></script>
+
     <style>
         body {
             max-width: 500px;
@@ -56,16 +56,26 @@
 
         <!-- Additional dropdowns -->
         <div class="container">
-            <select id="province"></select>
-            <select id="city"></select>
+            <div class="form-group">
+                <label for="country">Country:</label>
+                <select id="country" class="form-control"></select>
+            </div>
+            <div class="form-group">
+                <label for="city">City/Municipality:</label>
+                <select id="city" class="form-control"></select>
+            </div>
+            <div class="form-group">
+                <label for="barangay">Barangay:</label>
+                <select id="barangay" class="form-control"></select>
+            </div>
+            <div class="form-group">
+                <label for="contact">Contact Number:</label>
+                <input type="text" class="form-control" id="contact" name="contact">
+            </div>
         </div>
 
         <!-- Contact Number and Email Section -->
         <div class="form-row">
-            <div class="form-group col-md-6">
-                <label for="contact">Contact Number:</label>
-                <input type="text" class="form-control" id="contact" name="contact">
-            </div>
             <div class="form-group col-md-6">
                 <label for="email">Email:</label>
                 <input type="email" class="form-control" id="email" name="email" required>
@@ -88,6 +98,13 @@
     <!-- Link to Login Page -->
     <p style="margin-top: 20px;"> Already have an account? <a href="login.php">Login</a></p>
 </div>
+
+<!-- Bootstrap JS and jQuery (Optional) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Your custom JavaScript for populating dropdowns dynamically -->
 
 </body>
 </html>
