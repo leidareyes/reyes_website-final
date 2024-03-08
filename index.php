@@ -1,3 +1,28 @@
+<?php
+session_start();
+
+if(isset ($_POST["login"])){
+    $email = $_POST["email"];
+    $password = $_POST["password"];
+
+    require_once "database.php";
+    $sql = "SELECT * FROM users WHERE email = '$email'";
+    $result = mysqli_query($conn, $sql);
+    $users = mysqli_fetch_array($result, MYSQLI_ASSOC);
+    if ($users){
+        if(password_verify($password, $users["password"])){
+            $_SESSION["users"] = $users;
+            header("Location: index.php");
+            die();
+        } else {
+            $errorMessage = "<div class = 'alert alert-danger'> Password does not match </div>";
+        }
+    } else {
+        $errorMessage = "<div class = 'alert alert-danger'> Email does not match </div>";
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -68,7 +93,7 @@
   <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:80%">80%</div>
 </div><br>
 
-    <a href="path_to_your_file/Reyes%20Resum%C3%A9.pdf" download="Reyes Resume.pdf">
+    <a href="Reyes Resumé.pdf" download="Reyes Resume.pdf">
   <button class="w3-button w3-light-grey w3-padding-large w3-section">
     <i class="fa fa-download"></i> Download Resumé
   </button>
@@ -90,20 +115,27 @@
 
     <!-- Dark Line -->
     <hr style="border-color: #333;">
+    
+    <!-- Error Message Appear -->
+    <?php
+     if(isset($errorMessage)) {
+      echo "<h1>" . $errorMessage . "</h1>";
+      }     
+     ?>
 
  <!-- Login Form -->
 <div id="login" class="container" style="margin-left: 10px;">
     <h2>Login</h2>
-    <form action="login.php" method="post">
+    <form action="index.php" method="post">
         <div class="form-group">
-            <label for="username">Username:</label>
-            <input type="text" class="form-control" id="username" name="username">
+            <label for="email">Email:</label>
+            <input type="text" class="form-control" id="email" name="email">
         </div>
         <div class="form-group">
             <label for="password">Password:</label>
             <input type="password" class="form-control" id="password" name="password">
         </div>
-        <button type="submit" class="btn btn-primary">Login</button>
+        <input id="login" type="submit" value = "Login" class="btn btn-primary" name="login"></input>
     </form>
     <p> Don't have an account? <a href="registration.php">Create an account.</a></p>
 </div>

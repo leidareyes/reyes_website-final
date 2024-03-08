@@ -1,3 +1,29 @@
+<?php
+session_start();
+
+if(isset ($_POST["login"])){
+    $email = $_POST["email"];
+    $password = $_POST["password"];
+
+    require_once "database.php";
+    $sql = "SELECT * FROM users WHERE email = '$email'";
+    $result = mysqli_query($conn, $sql);
+    $users = mysqli_fetch_array($result, MYSQLI_ASSOC);
+    if ($users){
+        if(password_verify($password, $users["password"])){
+            $_SESSION["users"] = $users;
+            header("Location: home.php");
+            die();
+        } else {
+            $errorMessage = "<div class = 'alert alert-danger'> Password does not match </div>";
+        }
+    } else {
+        $errorMessage = "<div class = 'alert alert-danger'> Email does not match </div>";
+    }
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,8 +41,8 @@
         <h2>Login</h2>
         <form action="login.php" method="post">
             <div class="form-group">
-                <label for="username">Username:</label>
-                <input type="text" class="form-control" id="username" name="username">
+                <label for="email">Email:</label>
+                <input type="text" class="form-control" id="email" name="username">
             </div>
             <div class="form-group">
                 <label for="password">Password:</label>
