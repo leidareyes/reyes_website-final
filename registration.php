@@ -16,15 +16,18 @@
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="registration.css">
+
     <style>
+
         body {
-            max-width: 500px;
+            max-width: 700spx;
             margin: 0px auto;
             background: #f0f0f0;
         }
 
         .container {
-            font-size: 20px;
+            font-size: 25spx;
             margin-bottom: 20px; /* Added margin for spacing between sections */
         }
 
@@ -75,7 +78,7 @@
 
             <div class="form-group">
                 <label for="city">City/Municipality</label>
-                <select class="form-control" id="city" name="city" required>
+                <select class="form-control" id="city" name="city" >
                     <option selected>Choose...</option>
                 </select>
             </div>
@@ -85,7 +88,44 @@
                 <input type = "text" class = "form-control" name = "barangay" placeholder="Barangay: ">
             </div>
 
+            <div class="form-group">
+        <label for="phase">Phase/Subdivision</label>
+        <input type="text" class="form-control" id="phase" name="phase" placeholder="Phase/Subdivision">
+        </div>
+
+        <div class="form-group">
+        <label for="lot_block">Lot and Block</label>
+        <input type="text" class="form-control" id="lot_block" name="lot_block" placeholder="Lot and Block">
+        </div>
+
+        <div class="form-group">
+        <label for="street">Street</label>
+        <input type="text" class="form-control" id="street" name="street" placeholder="Street">
+        </div>
+
+        <div class="form-group">
+        <label for="contact_number">Contact Number</label>
+        <input type="tel" class="form-control" id="contact_number" name="contact_number" placeholder="+63 (Philippine Number)" required>
+        </div>
+
+    <script>
+            document.getElementById('contact_number').addEventListener('input', function(event) {
+    // Get the input value
+                    let inputValue = event.target.value;
+
+    // Remove any non-numeric characters
+                    let numericValue = inputValue.replace(/\D/g, '');
+
+    // Update the input field with the numeric value
+                    event.target.value = numericValue;
+});
+</script>
+
+
+     <!-- End of Address Section -->
+
         <!-- Contact Number and Email Section -->
+        <h2> Email and Password </h2>
         <div class="form-row">
             <div class="form-group col-md-6">
                 <label for="email">Email:</label>
