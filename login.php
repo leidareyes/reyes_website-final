@@ -12,8 +12,8 @@ if(isset ($_POST["login"])){
     if ($users){
         if(password_verify($password, $users["password"])){
             $_SESSION["users"] = $users;
-            header("Location: home.php");
-            die();
+            echo "<div class='alert alert-success'> You are Registered Successfully! </div>";
+                die();
         } else {
             $errorMessage = "<div class = 'alert alert-danger'> Password does not match </div>";
         }
@@ -21,7 +21,6 @@ if(isset ($_POST["login"])){
         $errorMessage = "<div class = 'alert alert-danger'> Email does not match </div>";
     }
 }
-
 ?>
 
 <!DOCTYPE html>
